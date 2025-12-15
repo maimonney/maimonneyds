@@ -832,6 +832,10 @@ h3 {
   transition: transform 0.3s ease;
 }
 
+.icono_interes i{
+  color: white;
+}
+
 .item_interes:hover .icono_interes {
   transform: scale(1.15);
 }
@@ -861,7 +865,7 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 0.05;
+  opacity: 0.2;
 }
 
 .texto_fondo_contacto h2 {
@@ -871,6 +875,7 @@ h3 {
   white-space: nowrap;
   color: transparent;
   -webkit-text-stroke: 2px #d79eb9;
+  text-transform: uppercase;
 }
 
 /* Contenedor */
