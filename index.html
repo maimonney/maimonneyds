@@ -2,147 +2,530 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mailen Monney</title>
-    <link rel="icon" href="imagen/isoMM.ico">
-    <script src="https://kit.fontawesome.com/62ea397d3a.js" crossorigin="anony"></script>
-    <link rel="stylesheet" href="css/estilo.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mailen Monney - Portfolio</title>
+  <link rel="icon" href="imagen/logo_mai_ico.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="https://kit.fontawesome.com/62ea397d3a.js" crossorigin="anony"></script>
+  <link rel="stylesheet" href="css/estilo_copy.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
 </head>
 
-<body>
-    <header id="nav">
+<body class="bg-[#7c6698] text-white">
 
-        <!--   <div id="cont_carga">
+  <header id="nav">
+
+    <!--   <div id="cont_carga">
             <div id="carga"></div>
             <div id="carga_img">
                 <img src="imagen/logo_mai.png" alt="logo">
             </div>
         </div> -->
 
-        <nav class="barra_navegacion">
-            <ul class="nav_ul">
-                <li class="nav_li">
-                    <img src="imagen/logo_mai.png" alt="logo">
-                </li>
-            </ul>
-            <ul class="nav_ul nav_opciones">
-                <li class="nav_li"><a href="index.html">Inicio</a></li>
-                <li class="nav_li sub_nav"><a href="trabajos.html">Trabajos</a>
-                    <ul class="sub_ul">
-                        <li class="sub_li"><a href="trabajos.html#diseño">Diseño</a></li>
-                        <li class="sub_li"><a href="trabajos.html#programacion">Programación</a></li>
-                        <li class="sub_li"><a href="trabajos.html#ilustracion">Ilustración</a></li>
-                    </ul>
-                </li>
-                <li class="nav_li btn_contacto"><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-
-        <div class="responsive_nav">
-            <div class="nav_responsive_btn">
-                <input type="checkbox" id="toggle">
-                <label for="toggle" class="btn btn1"><i class="fas fa-bars"></i></label>
-                <label for="toggle" class="btn2"><i class="fas fa-times"></i></label>
-                <nav class="nav_responsive">
-                    <ul class="nav_responsive_ul">
-                        <div class="link_responsive">
-                            <li class="nav_responsive_li nav_color text"><a href="index.html">Inicio</a></li>
-                            <li class="nav_responsive_li nav_color text"><a href="contacto.html">Contacto</a></li>
-                            <li class="nav_responsive_li nav_color text"><a href=" ">Diseño</a>
-                            </li>
-                            <li class="nav_responsive_li nav_color"><a href=" ">Programación</a>
-                            </li>
-                            <li class="nav_responsive_li nav_color"><a href=" ">Ilustración</a>
-                            </li>
-                        </div>
-                        <div class="logos_responsive">
-                            <img src="imagen/MMblanco2-14-14.png" alt="logo" class="logo_nav">
-
-                            <ul class="contacto_responsive">
-                                <li class="nav_responsive_li nav_color"><a href="https://www.behance.net/mailenmonney"
-                                        target="_blank"><i class=" fab fa-behance"></i></a></li>
-                                <li class="nav_responsive_li nav_color"> <a
-                                        href="https://www.linkedin.com/in/mailen-monney-ba5607222/" target="_blank"><i
-                                            class=" fab fa-linkedin-in"></i></a></li>
-                                <li class="nav_responsive_li nav_color"><a href="https://www.instagram.com/maimonney/"
-                                        target="_blank"><i class=" fab fa-instagram"></i></a></li>
-                            </ul>
-                        </div>
-                    </ul>
-                </nav>
-            </div>
-            <h1>Mailen Monney</h1>
+    <nav class="barra_navegacion">
+      <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <div class="text-[#d79eb9]">✦</div>
+          <h1>Mailen Monney</h1>
         </div>
-    </header>
+        <ul class="nav_ul nav_opciones">
+          <li class="nav_li"><a href="index.html">Inicio</a></li>
+          <li class="nav_li sub_nav"><a href="trabajos.html">Trabajos</a>
+            <ul class="sub_ul">
+              <li class="sub_li"><a href="trabajos.html#diseño">Diseño</a></li>
+              <li class="sub_li"><a href="trabajos.html#programacion">Programación</a></li>
+              <li class="sub_li"><a href="trabajos.html#ilustracion">Ilustración</a></li>
+            </ul>
+          </li>
+          <li class="nav_li btn_contacto"><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
 
-    <main>
-        <article class="seccion_principal">
+    <div class="responsive_nav">
+      <div class="nav_responsive_btn">
+        <input type="checkbox" id="toggle">
+        <label for="toggle" class="btn btn1"><i class="fas fa-bars"></i></label>
+        <label for="toggle" class="btn2"><i class="fas fa-times"></i></label>
+        <nav class="nav_responsive">
+          <ul class="nav_responsive_ul">
+            <div class="link_responsive">
+              <li class="nav_responsive_li nav_color text"><a href="index.html">Inicio</a></li>
+              <li class="nav_responsive_li nav_color text"><a href="contacto.html">Contacto</a></li>
+              <li class="nav_responsive_li nav_color text"><a href=" ">Diseño</a>
+              </li>
+              <li class="nav_responsive_li nav_color"><a href=" ">Programación</a>
+              </li>
+              <li class="nav_responsive_li nav_color"><a href=" ">Ilustración</a>
+              </li>
+            </div>
+            <div class="logos_responsive">
+              <img src="imagen/MMblanco2-14-14.png" alt="logo" class="logo_nav">
 
-            <div class="contenido_principal">
-                <h2>Portfolio</h2>
+              <ul class="contacto_responsive">
+                <li class="nav_responsive_li nav_color"><a href="https://www.behance.net/mailenmonney"
+                    target="_blank"><i class=" fab fa-behance"></i></a></li>
+                <li class="nav_responsive_li nav_color"> <a href="https://www.linkedin.com/in/mailen-monney-ba5607222/"
+                    target="_blank"><i class=" fab fa-linkedin-in"></i></a></li>
+                <li class="nav_responsive_li nav_color"><a href="https://www.instagram.com/maimonney/"
+                    target="_blank"><i class=" fab fa-instagram"></i></a></li>
+              </ul>
+            </div>
+          </ul>
+        </nav>
+      </div>
+      <h1>Mailen Monney</h1>
+    </div>
+    </nav>
+  </header>
 
-                <div class="informacion">
-                    <ul class="roles">
-                        <li>Diseñadora Gráfica</li>
-                        <li>UI / UX</li>
-                        <li>Desarrollo Web</li>
-                        <li>Contenido Digital</li>
-                    </ul>
+  <!-- Seccion Principal -->
+  <section class="contenido_principal">
+    <!-- Estrellas decorativas -->
+    <div class="estrella estrella-1">✦</div>
+    <div class="estrella estrella-2">✦</div>
+    <div class="estrella estrella-3">✦</div>
+    <div class="estrella estrella-4">✦</div>
 
-                    <a href="pdf/CV_Mailen_Monney.pdf" target="_blank" class="btn-cv">
-                        Ver CV
-                    </a>
+    <div class="contenedor_principal">
+      <div class="grid_principal">
+
+        <!-- Texto -->
+        <div class="texto_principal">
+          <div class="contenedor_portfolio">
+            <h2 class="titulo_relleno">Portfolio</h2>
+            <h2 class="titulo_contorno">Portfolio</h2>
+            <h2 class="titulo_contorno">Portfolio</h2>
+          </div>
+
+          <div class="tarjeta_presentacion">
+            <h3>Mailen Monney</h3>
+            <p class="rol">
+              Diseñadora Gráfica · UI/UX · Desarrollo Web · Contenido Digital
+            </p>
+            <p class="descripcion">
+              Diseño experiencias visuales que combinan estética, funcionalidad y estrategia digital.
+            </p>
+          </div>
+        </div>
+
+        <!-- Imagen + redes -->
+        <div class="media_principal">
+          <div class="contenedor_imagen">
+            <img src="imagen/mai_foto.jpg" alt="Mailen Monney - Diseñadora Gráfica">
+          </div>
+
+          <div class="redes_sociales">
+            <div>
+              <i class="fab fa-instagram"></i> —
+              <a href="https://instagram.com/maimonney" target="_blank">@maimonney</a>
+            </div>
+            <div>
+              <i class="fab fa-behance"></i> —
+              <a href="https://behance.net/mailenmonney" target="_blank">behance.net/mailenmonney</a>
+            </div>
+            <div>
+              <i class="fab fa-linkedin-in"></i> —
+              <a href="https://linkedin.com/in/mailen-monney" target="_blank">linkedin.com/in/mailen-monney</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Botón scroll -->
+    <button class="boton_scroll" onclick="scrollToAbout()">
+      <span>Scroll</span>
+      <span>down</span>
+      <span class="flecha">⌄</span>
+    </button>
+  </section>
+
+  <!-- Sobre mí -->
+  <section id="sobre_mi" class="seccion_sobre_mi">
+    <div class="contenedor_sobre_mi">
+      <div class="grid_sobre_mi">
+
+        <!-- Texto -->
+        <div class="texto_sobre_mi">
+          <h2 class="titulo_sobre_mi">
+            ¡Hola!<br>
+            Soy Mailen
+          </h2>
+
+          <div class="descripcion_sobre_mi">
+            <p>
+              Soy diseñadora gráfica, ilustradora y desarrolladora web, con experiencia en branding, contenido digital y
+              diseño de interfaces.
+            </p>
+            <p>
+              Me especializo en crear identidades visuales y experiencias digitales atractivas, combinando diseño,
+              tecnología y comunicación para lograr soluciones funcionales y coherentes.
+            </p>
+            <p>
+              Mi enfoque busca equilibrar estética, usabilidad y estrategia digital en cada proyecto.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Contacto -->
+        <div class="contenedor_contacto">
+          <div class="tarjeta_contacto">
+            <h3 class="titulo_contacto">Contacto</h3>
+
+            <div class="lista_contacto">
+
+              <div class="item_contacto">
+                <i class="fa-solid fa-location-dot"></i>
+                <div>
+                  <span class="etiqueta_contacto">Ubicación</span>
+                  <p>Campana, Buenos Aires, Argentina</p>
                 </div>
+              </div>
 
-                <ul class="redes_principal">
-                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="#"><i class="fab fa-behance"></i></a></li>
-                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                </ul>
+              <div class="item_contacto">
+                <i class="fa-regular fa-envelope"></i>
+                <div>
+                  <span class="etiqueta_contacto">Email</span>
+                  <a href="mailto:maimonneydg@gmail.com">
+                    maimonneydg@gmail.com
+                  </a>
+                </div>
+              </div>
+
             </div>
 
-            <div class="contenedor_image">
-                <p class="descripcion">
-                    Diseño experiencias visuales que combinan estética,
-                    funcionalidad y estrategia digital.
-                </p>
-                <img src="imagen/foto.jpg" alt="Foto de Mailen">
+            <!-- Decoración -->
+            <div class="decoracion_circulo"></div>
+          </div>
+
+          <div class="decoracion_estrella">✦</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="contenedor_resumen">
+    <!-- Estudios -->
+    <section class="education">
+      <div class="education-title">
+        <i class="fa-solid fa-graduation-cap icon"></i>
+        <h3>Formación</h3>
+      </div>
+
+      <div class="education-list">
+        <div class="education-item">
+          <span class="bullet">✦</span>
+          <div>
+            <span class="years">2023 - 2024</span>
+            <h4>Técnico Superior en Diseño y Programación Web</h4>
+            <p>Escuela Da Vinci</p>
+          </div>
+        </div>
+
+        <div class="education-item">
+          <span class="bullet">✦</span>
+          <div>
+            <span class="years">2023 - 2024</span>
+            <h4>Gestión de Medios Digitales</h4>
+            <p>Escuela Da Vinci</p>
+          </div>
+        </div>
+
+        <div class="education-item">
+          <span class="bullet">✦</span>
+          <div>
+            <span class="years">2020 - 2022</span>
+            <h4>Tecnicatura en Diseño Gráfico</h4>
+            <p>Instituto Sudamericano para la Enseñanza de la Comunicación</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experiencia -->
+    <section class="seccion_experiencia">
+      <div class="tarjeta_experiencia">
+
+        <!-- Decoración -->
+        <div class="decoracion_experiencia"></div>
+
+        <div class="contenido_experiencia">
+
+          <!-- Título -->
+          <div class="encabezado_experiencia">
+            <i class="fa-solid fa-briefcase icon"></i>
+            <h3 class="titulo_experiencia">Experiencia</h3>
+          </div>
+
+          <!-- Puesto -->
+          <div class="bloque_experiencia">
+            <span class="periodo_experiencia">2020 - Actualidad</span>
+            <h4 class="cargo_experiencia">
+              Diseñadora Gráfica & Creadora de Contenido Digital
+            </h4>
+            <p class="modalidad_experiencia">Freelance</p>
+
+            <ul class="lista_responsabilidades">
+              <li>Diseño de identidades visuales, logotipos y sistemas de marca</li>
+              <li>Creación de piezas gráficas para medios impresos y digitales</li>
+              <li>Gestión de redes sociales (feed, reels e historias)</li>
+              <li>Planificación de contenido, grillas y redacción de copys</li>
+              <li>Diseño de interfaces web y piezas para campañas publicitarias</li>
+            </ul>
+          </div>
+
+          <!-- Especialidades -->
+          <div class="bloque_especialidades">
+            <h4 class="titulo_especialidades">Especialidades</h4>
+
+            <div class="contenedor_etiquetas">
+              <span class="etiqueta">Branding</span>
+              <span class="etiqueta">Diseño visual</span>
+              <span class="etiqueta">UI/UX</span>
+              <span class="etiqueta">Diseño web</span>
+              <span class="etiqueta">Contenido digital</span>
+              <span class="etiqueta">Redes sociales</span>
+              <span class="etiqueta">Packaging</span>
+              <span class="etiqueta">Publicidad digital</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Habilidades -->
+  <section class="seccion_habilidades">
+    <!-- Estrellas decorativas -->
+    <div class="estrella estrella-1">✦</div>
+    <div class="estrella estrella-2">✦</div>
+    <div class="estrella estrella-3">✦</div>
+    <div class="estrella estrella-4">✦</div>
+
+    <!-- Texto de fondo -->
+    <div class="texto_fondo_habilidades">
+      <h2>HABILIDADES</h2>
+    </div>
+
+    <div class="contenido_habilidades">
+
+      <!-- Habilidades técnicas -->
+      <div class="bloque_habilidades">
+        <h3 class="titulo_seccion">Habilidades Técnicas</h3>
+
+        <div class="columnas_habilidades">
+
+          <!-- Software -->
+          <div class="bloque_software">
+            <h4 class="subtitulo">Software</h4>
+
+            <div class="grilla_software">
+
+              <div class="item_software">
+                <img src="imagen/icono/iconos_Photoshop.png" alt="Illustrator Logo">
+                <span>Photoshop</span>
+              </div>
+
+              <div class="item_software">
+                <img src="imagen/icono/iconos_Illustrator.png" alt="Illustrator Logo">
+                <span>Illustrator</span>
+              </div>
+
+              <div class="item_software">
+                <img src="imagen/icono/iconos_InDesign.png" alt="InDesign Logo">
+                <span>InDesign</span>
+              </div>
+
+              <div class="item_software">
+                <img src="imagen/icono/iconos_After-Effects.png" alt="After Effects Logo">
+                <span>After Effects</span>
+              </div>
+
+              <div class="item_software">
+                <img src="imagen/icono/iconos_Premiere-Pro.png" alt="Premiere Pro Logo">
+                <span>Premiere Pro</span>
+              </div>
+
+              <div class="item_software">
+                <img src="imagen/icono/iconos_Figma.png" alt="Figma Logo">
+                <span>Figma</span>
+              </div>
+
+              <div class="item_software">
+                <img src="imagen/icono/iconos-blender.png" alt="Blender Logo">
+                <span>Blender</span>
+              </div>
+
+              <div class="item_software">
+                <img src="imagen/icono/iconos_visual.png" alt="Visual Studio Code Logo">
+                <span>Visual Studio Code</span>
+              </div>
+
             </div>
 
-        </article>
+          </div>
 
-    </main>
+          <!-- Desarrollo Web -->
+          <div class="bloque_web">
+            <h4 class="subtitulo">Desarrollo Web</h4>
 
-    <!--  <footer class="pie_de_pagina">
-        <img src="imagen/MMblanco2-14-14.png" alt="logo" class="pie_img">
-        <ul>
-            <li class="pie_de_pagina_li"><a href="index.html">Inicio</a></li>
-            <li class="pie_de_pagina_li"><a href="contacto.html">Contacto</a></li>
-            <li class="pie_de_pagina_li"><a href="trabajos.html">Trabajos</a></li>
-        </ul>
-        <ul>
-            <li class="pie_li_red"><a href="https://www.instagram.com/maimonney/" target="_blank"><i
-                        class="iconos_pie fab fa-instagram"></i></a></li>
-            <li class="pie_li_red"><a href="https://www.twitch.tv/maimonney" target="_blank"><i
-                        class="iconos_pie fab fa-twitch"></i></a></li>
-            <li class="pie_li_red"><a href="https://www.behance.net/mailenmonney" target="_blank"><i
-                        class="iconos_pie fab fa-behance"></i></a></li>
-            <li class="pie_li_red"><a href="https://www.linkedin.com/in/mailen-monney-ba5607222/" target="_blank"><i
-                        class="iconos_pie fab fa-linkedin-in"></i></a></li>
-            <li class="pie_li_red"><a href="https://www.tiktok.com/@321xmaix123?lang=es" target="_blank"><i
-                        class="iconos_pie fab fa-tiktok"></i></a></li>
-            <li class="pie_li_red"><a href="https://twitter.com/maimonney" target="_blank"><i
-                        class="iconos_pie fab fa-twitter"></i></a></li>
-            <li class="pie_li_red"><a href="https://www.facebook.com/mailen.monney" target="_blank"><i
-                        class="iconos_pie fab fa-facebook-f"></i></a></li>
-        </ul>
-        <a href="contacto.html" class="mail">maimonney30@gmail.com</a>
-    </footer> -->
+            <div class="contenedor_tecnologias">
+              <span class="etiqueta_tecnologia">HTML</span>
+              <span class="etiqueta_tecnologia">CSS</span>
+              <span class="etiqueta_tecnologia">JavaScript</span>
+              <span class="etiqueta_tecnologia">Vue</span>
+              <span class="etiqueta_tecnologia">Node.js</span>
+              <span class="etiqueta_tecnologia">PHP</span>
+            </div>
+          </div>
 
-    <script src="js/particles.min.js"></script>
-    <script src="js/index.js"></script>
+        </div>
+      </div>
 
+      <!-- Cursos -->
+      <div class="bloque_cursos">
+        <h3 class="titulo_seccion">Cursos & Actividades</h3>
+
+        <div class="grilla_cursos">
+          <div class="item_curso">✦ Dibujo Anatómico</div>
+          <div class="item_curso">✦ Blender</div>
+          <div class="item_curso">✦ CSS Avanzado para IDM — Escuela Da Vinci</div>
+          <div class="item_curso">✦ Google Ads & Meta Ads</div>
+          <div class="item_curso">✦ Community Management</div>
+          <div class="item_curso">✦ IA para uso creativo — Escuela Da Vinci</div>
+          <div class="item_curso">✦ Curso básico de Fotografía</div>
+        </div>
+
+        <p class="nota_cursos">
+          Cursos complementarios realizados en plataformas especializadas y formación académica.
+        </p>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Hobbies -->
+  <section class="seccion_intereses">
+    <h3 class="titulo_intereses">Intereses</h3>
+
+    <div class="grilla_intereses">
+
+      <div class="item_interes">
+        <div class="icono_interes">
+          🎨
+        </div>
+        <h4>Ilustración digital</h4>
+        <p>Creación artística y expresión visual</p>
+      </div>
+
+      <div class="item_interes">
+        <div class="icono_interes">
+          ✨
+        </div>
+        <h4>Arte y diseño</h4>
+        <p>Exploración de tendencias y estilos</p>
+      </div>
+
+      <div class="item_interes">
+        <div class="icono_interes">
+          📷
+        </div>
+        <h4>Fotografía</h4>
+        <p>Captura de momentos y composición</p>
+      </div>
+
+      <div class="item_interes">
+        <div class="icono_interes">
+          🌐
+        </div>
+        <h4>Diseño web</h4>
+        <p>Interfaces y experiencias digitales</p>
+      </div>
+
+      <div class="item_interes">
+        <div class="icono_interes">
+          💡
+        </div>
+        <h4>Tecnología creativa</h4>
+        <p>Innovación y herramientas digitales</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section class="seccion_contacto">
+
+    <!-- Texto decorativo de fondo -->
+    <div class="texto_fondo_contacto">
+      <h2>CONTACTO</h2>
+    </div>
+
+    <div class="contenedor_contacto">
+      <div class="contenido_contacto">
+
+        <h3 class="titulo_contacto">Trabajemos juntos</h3>
+
+        <p class="descripcion_contacto">
+          ¿Tenés un proyecto en mente? Me encantaría conocer tus ideas y ayudarte a darles vida.
+          Hablemos sobre cómo puedo aportar valor a tu marca o emprendimiento.
+        </p>
+
+        <!-- Email -->
+        <div class="bloque_email">
+          <a href="mailto:maimonneydg@gmail.com" class="email_contacto">
+            ✉ maimonneydg@gmail.com
+          </a>
+        </div>
+
+        <!-- Redes -->
+        <div class="redes_contacto">
+          <a href="https://instagram.com/maimonney" target="_blank"><i class="fab fa-instagram"></i></a>
+          <span>•</span>
+          <a href="https://behance.net/mailenmonney" target="_blank"><i class="fab fa-behance"></i></a>
+          <span>•</span>
+          <a href="https://linkedin.com/in/mailen-monney" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Estrellas decorativas -->
+    <div class="estrella estrella-contacto-1">✦</div>
+    <div class="estrella estrella-contacto-2">✦</div>
+    <div class="estrella estrella-contacto-3">✦</div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#7c6698] py-8 text-center text-white/60 text-sm">
+    <p>© 2024 Mailen Monney · Diseñado con pasión</p>
+  </footer>
+
+  <!--   <script>
+    feather.replace();
+
+    const mobileButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    function scrollToSection(id) {
+      const element = document.getElementById(id);
+      element.scrollIntoView({ behavior: 'smooth' });
+      // Cierra menú mobile si está abierto
+      if (!mobileMenu.classList.contains('hidden')) {
+        mobileMenu.classList.add('hidden');
+      }
+    }
+  </script> -->
 </body>
 
 </html>
