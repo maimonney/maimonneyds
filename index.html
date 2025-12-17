@@ -9,8 +9,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <script src="https://kit.fontawesome.com/62ea397d3a.js" crossorigin="anony"></script>
   <link rel="stylesheet" href="css/estilo_copy.css">
-  <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/feather-icons"></script>
+  <script src="js/index.js"></script>
 </head>
 
 <body class="bg-[#7c6698] text-white">
@@ -25,9 +25,9 @@
         </div> -->
 
     <nav class="barra_navegacion">
-      <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-        <div class="flex items-center gap-2">
-          <div class="text-[#d79eb9]">✦</div>
+      <div class="cont_nav">
+        <div>
+          <div class="estrella_h1">✦</div>
           <h1>Mailen Monney</h1>
         </div>
         <ul class="nav_ul nav_opciones">
@@ -136,19 +136,19 @@
     </div>
 
     <!-- Botón scroll -->
-    <button class="boton_scroll" onclick="scrollToAbout()">
-      <span>Scroll</span>
-      <span>down</span>
+    <a href="#sobre_mi" class="boton_scroll">
+      <p>Conocé más</p>
       <span class="flecha">⌄</span>
-    </button>
+    </a>
+
+
   </section>
 
   <!-- Sobre mí -->
   <section id="sobre_mi" class="seccion_sobre_mi">
     <div class="contenedor_sobre_mi">
       <div class="grid_sobre_mi">
-
-        <!-- Texto -->
+        
         <div class="texto_sobre_mi">
           <h2 class="titulo_sobre_mi">
             ¡Hola!<br>
@@ -470,19 +470,18 @@
     <div class="contenedor_contacto">
       <div class="contenido_contacto">
 
-        <h3 class="titulo_contacto">Trabajemos juntos</h3>
+        <h3 class="titulo_contacto">Contacto</h3>
 
         <p class="descripcion_contacto">
-          ¿Tenés un proyecto en mente? Me encantaría conocer tus ideas y ayudarte a darles vida.
-          Hablemos sobre cómo puedo aportar valor a tu marca o emprendimiento.
+          Me interesa formar parte de proyectos digitales donde el diseño y la funcionalidad trabajen en conjunto.
         </p>
 
         <!-- Email -->
-        <div class="bloque_email">
-          <a href="mailto:maimonneydg@gmail.com" class="email_contacto">
-            <i class="fa-solid fa-envelope"></i> maimonneydg@gmail.com
-          </a>
-        </div>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=maimonneydg@gmail.com" target="_blank"
+          class="email_contacto">
+          <i class="fa-solid fa-envelope"></i> maimonneydg@gmail.com
+        </a>
+
 
         <!-- Redes -->
         <div class="redes_contacto">
@@ -504,28 +503,8 @@
 
   <!-- Footer -->
   <footer class="bg-[#7c6698] py-8 text-center text-white/60 text-sm">
-    <p>© 2024 Mailen Monney · Diseñado con pasión</p>
+    <p>© 2026 Mailen Monney · Diseñadora gráfica & desarrolladora web</p>
   </footer>
-
-  <!--   <script>
-    feather.replace();
-
-    const mobileButton = document.getElementById('mobile-menu-button');
-    const mobileMenu = document.getElementById('mobile-menu');
-
-    mobileButton.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-    });
-
-    function scrollToSection(id) {
-      const element = document.getElementById(id);
-      element.scrollIntoView({ behavior: 'smooth' });
-      // Cierra menú mobile si está abierto
-      if (!mobileMenu.classList.contains('hidden')) {
-        mobileMenu.classList.add('hidden');
-      }
-    }
-  </script> -->
 </body>
 
 </html>
