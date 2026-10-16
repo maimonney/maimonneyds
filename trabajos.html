@@ -2,484 +2,168 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mailen Monney</title>
-    <link rel="icon" href="imagen/isoMM.ico">
-    <script src="https://kit.fontawesome.com/62ea397d3a.js" crossorigin="anony"></script>
-    <link rel="stylesheet" href="css/estilo.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mailén Monney - Portfolio</title>
+  <link rel="icon" href="imagen/logo_mai_ico.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="https://kit.fontawesome.com/62ea397d3a.js" crossorigin="anony"></script>
+  <link rel="stylesheet" href="css/estilo.css">
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script src="js/index.js"></script>
 </head>
 
-<body class="fondo">
-    <header id="nav">
-        <div id="particles-js"></div>
-        <div id="cont_carga">
+<body>
+      <header id="nav">
+
+    <!--   <div id="cont_carga">
             <div id="carga"></div>
             <div id="carga_img">
-                <img src="imagen/isoMM.png" alt="mi logo">
+                <img src="imagen/logo_mai.png" alt="logo">
             </div>
+        </div> -->
+
+    <nav class="barra_navegacion">
+      <div class="cont_nav">
+        <div>
+          <div class="estrella_h1">✦</div>
+          <h1>Mailen Monney</h1>
         </div>
-        <nav class="barra_navegacion">
-            <ul class="nav_ul">
-                <li class="nav_li">
-                    <img src="imagen/MMblanco-14-14.png" alt="logo">
-                </li>
+        <ul class="nav_ul nav_opciones">
+          <li class="nav_li"><a href="index.html">Inicio</a></li>
+          <li class="nav_li sub_nav"><a href="trabajos.html">Trabajos</a>
+            <ul class="sub_ul">
+              <li class="sub_li"><a href="trabajos.html#diseño">Diseño</a></li>
+              <li class="sub_li"><a href="trabajos.html#programacion">Programación</a></li>
+              <li class="sub_li"><a href="trabajos.html#ilustracion">Ilustración</a></li>
             </ul>
-            <ul class="nav_ul">
-                <li class="nav_li"><a href="index.html">Inicio</a></li>
-                <li class="nav_li"><a href="contacto.html">Contacto</a></li>
-                <li class="nav_li sub_nav"><a href="trabajos.html">Trabajos</a>
-                    <ul class="sub_ul">
-                        <li class="sub_li"><a href="trabajos.html#dibujos">Dibujos</a></li>
-                        <li class="sub_li"><a href="trabajos.html#infografia">Infografías</a></li>
-                        <li class="sub_li"><a href="trabajos.html#fotomontage">Fotomontage</a></li>
-                        <li class="sub_li"><a href="trabajos.html#branding">Branding</a></li>
-                        <li class="sub_li"><a href="trabajos.html#facultad">Trabajos de la facultad</a></li>
-                        <li class="sub_li"><a href="trabajos.html#papalotl">Papalotl</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <ul class="nav_ul">
-                <li class="nav_li_red"><a href="https://www.instagram.com/maimonney/" target="_blank"><i class=" fab fa-instagram"></i></a></li>
-                <li class="nav_li_red"><a href="https://www.twitch.tv/maimonney" target="_blank"><i class="fab fa-twitch"></i></a></li>
-                <li class="nav_li_red"><a href="https://www.behance.net/mailenmonney" target="_blank"><i class=" fab fa-behance"></i></a></li>
-                <li class="nav_li_red"> <a href="https://www.linkedin.com/in/mailen-monney-ba5607222/" target="_blank"><i class=" fab fa-linkedin-in"></i></a></li>
-            </ul>
+          </li>
+          <li class="nav_li btn_contacto"><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <div class="responsive_nav">
+      <div class="nav_responsive_btn">
+        <input type="checkbox" id="toggle">
+        <label for="toggle" class="btn btn1"><i class="fas fa-bars"></i></label>
+        <label for="toggle" class="btn2"><i class="fas fa-times"></i></label>
+        <nav class="nav_responsive">
+          <ul class="nav_responsive_ul">
+            <div class="link_responsive">
+              <li class="nav_responsive_li nav_color text"><a href="index.html">Inicio</a></li>
+              <li class="nav_responsive_li nav_color text"><a href="contacto.html">Contacto</a></li>
+              <li class="nav_responsive_li nav_color text"><a href=" ">Diseño</a>
+              </li>
+              <li class="nav_responsive_li nav_color"><a href=" ">Programación</a>
+              </li>
+              <li class="nav_responsive_li nav_color"><a href=" ">Ilustración</a>
+              </li>
+            </div>
+            <div class="logos_responsive">
+
+              <ul class="contacto_responsive">
+                <li class="nav_responsive_li nav_color"><a href="https://www.behance.net/mailenmonney"
+                    target="_blank"><i class=" fab fa-behance"></i></a></li>
+                <li class="nav_responsive_li nav_color"> <a href="https://www.linkedin.com/in/mailen-monney-ba5607222/"
+                    target="_blank"><i class=" fab fa-linkedin-in"></i></a></li>
+                <li class="nav_responsive_li nav_color"><a href="https://www.instagram.com/maimonney/"
+                    target="_blank"><i class=" fab fa-instagram"></i></a></li>
+              </ul>
+            </div>
+          </ul>
         </nav>
-        <div class="responsive_nav">
-            <div class="nav_responsive_btn">
-                <input type="checkbox" id="toggle">
-                <label for="toggle" class="btn btn1"><i class="fas fa-bars"></i></label>
-                <label for="toggle" class="btn2"><i class="fas fa-times"></i></label>
-                <nav class="nav_responsive">
-                    <ul class="nav_responsive_ul">
-                        <div class="link_responsive">
-                            <li class="nav_responsive_li nav_color text"><a href="index.html">Inicio</a></li>
-                            <li class="nav_responsive_li nav_color text"><a href="contacto.html">Contacto</a></li>
-                            <li class="nav_responsive_li nav_color text"><a href="trabajos.html">Trabajos</a></li>
-                            <li class="nav_responsive_li nav_color text"><a href="trabajos.html#dibujos">Dibujos</a></li>
-                            <li class="nav_responsive_li nav_color"><a href="trabajos.html#infografia">Infografías</a></li>
-                            <li class="nav_responsive_li nav_color"><a href="trabajos.html#fotomontage">Fotomontage</a></li>
-                            <li class="nav_responsive_li nav_color"><a href="trabajos.html#branding">Branding</a></li>
-                            <li class="nav_responsive_li nav_color"><a href="trabajos.html#facultad">Trabajos de la facultad</a></li>
-                            <li class="nav_responsive_li nav_color"><a href="trabajos.html#papalotl">Papalotl</a></li>
-                            <li class="nav_responsive_li nav_color"><a href="https://www.behance.net/mailenmonney" target="_blank"><i class=" fab fa-behance"></i></a></li>
-                            <li class="nav_responsive_li nav_color"> <a href="https://www.linkedin.com/in/mailen-monney-ba5607222/" target="_blank"><i class=" fab fa-linkedin-in"></i></a></li>
-                            <li class="nav_responsive_li nav_color"><a href="https://www.instagram.com/maimonney/" target="_blank"><i class=" fab fa-instagram"></i></a></li>
-                            <li class="nav_responsive_li nav_color"><a href="https://www.facebook.com/mailen.monney" target="_blank"><i class=" fab fa-facebook-f"></i></a></li>
-                            <li class="nav_responsive_li nav_color"><a href="https://www.tiktok.com/@321xmaix123?lang=es" target="_blank"><i class=" fab fa-tiktok"></i></a></li>
-                            <li class="nav_responsive_li nav_color"><a href="https://www.twitch.tv/maimonney" target="_blank"><i class="fab fa-twitch"></i></a></li>
-                            <li class="nav_responsive_li nav_color"><a href="https://twitter.com/maimonney" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                        </div>
-                        <div class="logos_responsive">
-                            <li class="nav_responsive_li logo_p_nav"><a href="trabajos.html#papalotl"></a><img src="imagen/papalotl/logoblanco-02.png" alt="logo papalotl"></li>
-                            <!-- <img src="imagen/MMblanco2-14-14.png" alt="logo" class="logo_nav"> -->
-                        </div>
-                    </ul>
-                </nav>
+      </div>
+      <h1>Mailen Monney</h1>
+    </div>
+    </nav>
+  </header>
+
+    <!-- Seccion Principal -->
+  <section class="contenido_portfolio">
+    <!-- Estrellas decorativas -->
+    <div class="estrella estrella-1">✦</div>
+    <div class="estrella estrella-2">✦</div>
+    <div class="estrella estrella-3">✦</div>
+    <div class="estrella estrella-4">✦</div>
+
+    <div class="contenedor_portfolio">
+      <div class="grid_portfolio">
+
+        <!-- Texto -->
+        <div class="texto_portfolio">
+          <div class="contenedor_portfolio">
+            <h2 class="titulo_relleno">Portfolio</h2>
+          </div>
+
+          <div class="tarjeta_presentacion">
+            <h3>Mailén Monney</h3>
+            <div class="bloque_web">
+            <h4 class="subtitulo">Trabajos</h4>
+
+            <div class="contenedor_proyectos">
+                <a href="" class="etiqueta_tecnologia">Diseño Gráfico</a>
+                <a href="" class="etiqueta_tecnologia">Programación</a>
+                <a href="" class="etiqueta_tecnologia">UI/UX</a>
             </div>
-            <h1>Mailen Monney</h1>
+          </div>
+          </div>
         </div>
-    </header>
-    <main class="cont_img">
-        <section id="dibujos">
-            <h2>Dibujo digital</h2>
-            <div class="galeria">
-                <div class="foto">
-                    <div class="contenedor-modal">
-                        <img src="imagen/dibujos/dibujo_magic.jpg" alt="" />
-                        <div class="overlay">
-                            <h3>Magic</h3>
-                            <p>"Nothing is here what it is if everything <br> what you want <br> you have at once."</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="foto">
-                    <div class="contenedor-modal">
-                        <img src="imagen/dibujos/1-sirena-pezpayaso.jpg" alt="" />
-                        <div class="overlay">
-                            <h3>Ilustracion sirena</h3>
-                            <p>Ilustracion de una sirena pez payaso. Estos peces son muy territoriales y en ocasiones agresivos. Su estructura social establece una jerarquía en la cual la hembra más grande y agresiva está en el máximo nivel.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="foto">
-                    <div class="contenedor-modal">
-                        <img src="imagen/dibujos/mexicana.jpg" alt="" />
-                        <div class="overlay">
-                            <h3>Cempasúchil</h3>
-                            <p>Ilustracion de catrina. Entre flores, colores y sabores, recordamos a quienes ya no están.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="foto">
-                    <div class="contenedor-modal">
-                        <img src="imagen/dibujos/ajolote.jpg" alt="" />
-                        <div class="overlay">
-                            <h3>Axolotl</h3>
-                            <p>Los ajolotes fueron nombrados tras el dios azteca del fuego y el rayo, Xolotl, que podía adoptar la forma de una salamandra. Xolotl también está relacionado con perros, y "atl" es la antigua palabra azteca para decir "agua", por lo que "axolotl" a veces se traduce como "perro de agua".</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="foto">
-                    <div class="contenedor-modal">
-                        <img src="imagen/dibujos/itzamna.jpg" alt="" />
-                        <div class="overlay">
-                            <h3>Zamná</h3>
-                            <p>Zamná, gran sacerdote maya, dios de la sabiduría, el cielo, la noche y el dia.
-                                Plantea la idea de vivir con propósito, de aceptar la diversidad de la psicología humana y de lograr encontrar un camino entre la contrariedad de las emociones, para adentrarse en la sabiduría.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="foto">
-                    <div class="contenedor-modal">
-                        <img src="imagen/dibujos/kauil%203.jpg" alt="" />
-                        <div class="overlay">
-                            <h3>Kauil</h3>
-                            <p>Kauil dios maya del fuego, tenía el poder de sanar enfermedades que fueran generadas por la irá del fuego, además se le imploraba y adoraba para pedirle su favor aún nacimiento exitoso.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="foto">
-                    <div class="contenedor-modal">
-                        <img src="imagen/dibujos/wicht.png" alt="Dibujo digital" />
-                        <div class="overlay">
-                            <h3>Witch</h3>
-                            <p>La magia está en cada rincón, sólo hay que observar atentamente.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="foto">
-                    <div class="contenedor-modal">
-                        <img src="imagen/dibujos/lucy.jpg" alt="" />
-                        <div class="overlay">
-                            <h3>Lucy</h3>
-                            <p>Personaje del libro Witches. Una ninfa del bosque en la mitología griega es una diosa menor de la naturaleza asociada a un lugar en particular o relieve. A diferencia de otras diosas, las ninfas se consideraban por lo general como espíritus divinos que animaban la naturaleza, y se las representaba como jovenes doncellas núbiles a quienes le encanta bailar y cantar.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="foto">
-                    <div class="contenedor-modal">
-                        <img src="imagen/dibujos/futurist.jpg" alt="Dibujo digital" />
-                        <div class="overlay">
-                            <h3>Metropolis</h3>
-                            <p>Cualquier tecnología suficientemente avanzada es indistinguible de la magia.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="foto">
-                    <div class="contenedor-modal">
-                        <img src="imagen/dibujos/bruja.png" alt="Dibujo digital" />
-                        <div class="overlay">
-                            <h3>Hechizo</h3>
-                            <p>La magia es un puente que te permite ir del mundo visible hacia el invisible. Y aprender las lecciones de ambos mundos.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="foto">
-                    <div class="contenedor-modal">
-                        <img src="imagen/dibujos/aire.png" alt="Dibujo digital" />
-                        <div class="overlay">
-                            <h3>Cuauhtli</h3>
-                            <p>Personaje 1/4 elemento aire. <br> “Nuestro amor es como el viento, no puedo verlo, pero si sentirlo.”</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="foto">
-                    <div class="contenedor-modal">
-                        <img src="imagen/dibujos/agua.png" alt="Dibujo digital" />
-                        <div class="overlay">
-                            <h3>Chaltún Ha</h3>
-                            <p>Personaje 2/4 elemento agua. <br> “Si hay magia en este planeta, está contenida en el agua”</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="foto">
-                    <div class="contenedor-modal">
-                        <img src="imagen/dibujos/tierra.png" alt="Dibujo digital" />
-                        <div class="overlay">
-                            <h3>Manik</h3>
-                            <p>Personaje 3/4 elemento tierra. <br> "La Tierra es la madre y la tumba de la naturaleza; su antro sepulcral es su seno creador."</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="foto">
-                    <div class="contenedor-modal">
-                        <img src="imagen/dibujos/fuego2.png" alt="Dibujo digital" />
-                        <div class="overlay">
-                            <h3>kʼaakʼ</h3>
-                            <p>Personaje 4/4 elemento fuego. <br> "El calor no puede ser separado del fuego, ni la belleza de lo eterno."</p>
-                        </div>"
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="infografia">
-            <h2>Infografías</h2>
-            <div class="galeria">
-                <div class="foto">
-                    <div class="contenedor-modal">
-                        <img src="imagen/dibujos/infografiaajolote.png" alt="infografía ajolote">
-                        <div class="overlay">
-                            <h3>Infografía sore ajolote</h3>
-                            <p>El ajolote es conocido como el Peter Pan de las salamandras. Si bien la mayoría de los anfibios superan su fase acuática para comenzar su vida en tierra, el ajolote conserva en gran parte sus características larvales y pasa su vida adulta en el agua.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="foto">
-                    <div class="contenedor-modal">
-                        <img src="imagen/dibujos/infografiasel.png" alt="infografía selena gomez">
-                        <div class="overlay">
-                            <h3>Selena Gomez</h3>
-                            <p>Infografía sobre la cantante, compositora, actriz, productora, filántropa, directora, diseñadora, bailarina y empresaria estadounidense, Selena Gomez</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="foto">
-                    <div class="contenedor-modal">
-                        <img src="imagen/dibujos/infografiaQuetzalcoatl.png" alt="infografía ajolote">
-                        <div class="overlay">
-                            <h3>Quetzalcoatl</h3>
-                            <p>Quetzalcóatl (Serpiente emplumada) es una de las más importantes representaciones de la cultura mesoamericana, a veces considerado la principal divinidad del panteón mexica, asociado con la vida, la luz, el color blanco, la fertilidad, la civilización y el conocimiento.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="fotomontage">
-            <h2>Fotomontage</h2>
-            <div class="galeria">
-                <div class="foto">
-                    <div class="contenedor-modal">
-                        <img src="imagen/dibujos/EditsRostro.png" alt="Dibujo digital" />
-                        <div class="overlay">
-                            <h3>Fotomontage</h3>
-                            <p>Cada cosa tiene su belleza, pero no todos pueden verla.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="foto">
-                    <div class="contenedor-modal">
-                        <img src="imagen/trabajos_de_facultad/alas2.jpg" alt="edicion para computacion">
-                        <div class="overlay">
-                            <h3>Angel</h3>
-                            <p>Fotomontaje para computación gráfica.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="foto">
-                    <div class="contenedor-modal">
-                        <img src="imagen/trabajos_de_facultad/sirena.jpg" alt="edicion para computacion">
-                        <div class="overlay">
-                            <h3>Sirena</h3>
-                            <p>Fotomontaje para computación gráfica.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="branding">
-            <h2>Branding</h2>
-            <div class="galeria">
-                <div class="foto">
-                    <div class="contenedor-modal">
-                        <img src="imagen/trabajos_de_facultad/jujuy_marca.jpg" alt="">
-                        <div class="overlay">
-                            <h3>Branding (San Salvador de Jujuy)</h3>
-                            <p>Creacion de marca sobre ciudad, inspirada en el carnaval.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="facultad">
-            <h2>Trabajo de la facultad</h2>
-            <div class="galeria">
-                <div class="foto">
-                    <div class="contenedor-modal">
-                        <img src="imagen/trabajos_de_facultad/Stickers-13.png" alt="trabajo para computacion sticers">
-                        <div class="overlay">
-                            <h3>Trabajo para computacion stickers</h3>
-                            <p>12 Stickers, vectorizacion de mi perra.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="foto">
-                    <div class="contenedor-modal">
-                        <img src="imagen/trabajos_de_facultad/soporte%204.png" alt="publicidad de libro para diseño">
-                        <div class="overlay">
-                            <h3>Publicidad</h3>
-                            <p>Trabajo para diseño gráfico relacionado con nuestro signo del zodiaco.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="foto">
-                    <div class="contenedor-modal">
-                        <img src="imagen/trabajos_de_facultad/25.JPG" alt="logo para diseño">
-                        <div class="overlay">
-                            <h3>Logo</h3>
-                            <p>Logo para diseño gáfico de un parque acuatico.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="foto">
-                    <div class="contenedor-modal">
-                        <img src="imagen/trabajos_de_facultad/4.png" alt="Disco de vinilo">
-                        <div class="overlay">
-                            <h3>Tapa de vinilo</h3>
-                            <p>Concepto de tapa de vinilo para un cantante en surgimiento.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="foto">
-                    <div class="contenedor-modal">
-                        <img src="imagen/trabajos_de_facultad/34.png" alt="Revista">
-                        <div class="overlay">
-                            <h3>Revista para historia del arte</h3>
-                            <p>Revista para un trabajo de facultad sobre diferentes vanguardias. <br>
-                                <a href="https://www.behance.net/gallery/131650047/Revista-para-la-carrera-de-Diseno-Grafico" target="_blank"> Click para ver el trabajo completo.</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="papalotl">
-            <h2>Mí emprendimiento</h2>
-            <div class="galeria">
-                <div class="foto">
-                    <div class="contenedor-modal">
-                        <img src="imagen/papalotl/59.png" alt="tarjeta personal">
-                        <div class="overlay">
-                            <h3>Tarjeta personal</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="foto">
-                    <div class="contenedor-modal">
-                        <img src="imagen/papalotl/tags.jpg" alt="tarjeta personal" />
-                        <div class="overlay">
-                            <h3>Tags personalizados</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="foto">
-                    <div class="contenedor-modal">
-                        <img src="imagen/papalotl/candybar.png" alt="logo">
-                        <div class="overlay">
-                            <h3>Logo</h3>
-                            <p>Para Candy Bar Fresa.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="foto">
-                    <div class="contenedor-modal">
-                        <img src="imagen/papalotl/logo-21.png" alt="logo">
-                        <div class="overlay">
-                            <h3>Logo</h3>
-                            <p>Para Lavanda y Bambú.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="foto">
-                    <div class="contenedor-modal">
-                        <img src="imagen/papalotl/logo_08.png" alt="logo">
-                        <div class="overlay">
-                            <h3>Logo</h3>
-                            <p>Para MyKimera.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="foto">
-                    <div class="contenedor-modal">
-                        <img src="imagen/papalotl/logo_adriana.png" alt="logo">
-                        <div class="overlay">
-                            <h3>Logo</h3>
-                            <p>Para Adriana</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="foto">
-                    <div class="contenedor-modal">
-                        <img src="imagen/papalotl/serafina-07.png" alt="logo">
-                        <div class="overlay">
-                            <h3>Logo</h3>
-                            <p>Para Serafina.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="foto">
-                    <div class="contenedor-modal">
-                        <img src="imagen/papalotl/amiguri.jpg" alt="tarjeta personal" />
-                        <div class="overlay">
-                            <h3>Tarjeta personal</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="foto">
-                    <div class="contenedor-modal">
-                        <img src="imagen/papalotl/manosarte.jpg" alt="tarjeta personal" />
-                        <div class="overlay">
-                            <h3>Tarjeta personal</h3>
-                            <p>Para Manos arte.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="foto">
-                    <div class="contenedor-modal">
-                        <img src="imagen/papalotl/planificador.jpg" alt="planificador semanal" />
-                        <div class="overlay">
-                            <h3>Planificador semanal</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="foto">
-                    <div class="contenedor-modal">
-                        <img src="imagen/papalotl/ageda.png" alt="agenda">
-                        <div class="overlay">
-                            <h3>Agenda</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="foto">
-                    <div class="contenedor-modal">
-                        <img src="imagen/papalotl/pin.jpg" alt="pines y llaveros">
-                        <div class="overlay">
-                            <h3>Pines y llaveros</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="foto">
-                    <div class="contenedor-modal">
-                        <img src="imagen/papalotl/1.png" alt="calendario">
-                        <div class="overlay">
-                            <h3>Calendario</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <a href="#nav" class="arrow"><i class="fas fa-arrow-alt-circle-up"></i></a>
-    </main>
-    <footer class="pie_de_pagina">
-        <!-- <img src="imagen/MMblanco2-14-14.png" alt="" class="pie_img"> -->
-        <ul>
-            <li class="pie_de_pagina_li"><a href="index.html">Inicio</a></li>
-            <li class="pie_de_pagina_li"><a href="contacto.html">Contacto</a></li>
-            <li class="pie_de_pagina_li"><a href="trabajos.html">Trabajos</a></li>
-        </ul>
-        <ul>
-           <li class="pie_li_red"><a href="https://www.instagram.com/maimonney/" target="_blank"><i class="iconos_pie fab fa-instagram"></i></a></li>
-           <li class="pie_li_red"><a href="https://www.twitch.tv/maimonney" target="_blank"><i class="iconos_pie fab fa-twitch"></i></a></li>
-           <li class="pie_li_red"><a  href="https://www.behance.net/mailenmonney" target="_blank"><i class="iconos_pie fab fa-behance"></i></a></li>
-           <li class="pie_li_red"><a href="https://www.linkedin.com/in/mailen-monney-ba5607222/" target="_blank"><i class="iconos_pie fab fa-linkedin-in"></i></a></li>
-            <li class="pie_li_red"><a href="https://www.tiktok.com/@321xmaix123?lang=es" target="_blank"><i class="iconos_pie fab fa-tiktok"></i></a></li>
-            <li class="pie_li_red"><a  href="https://twitter.com/maimonney" target="_blank"><i class="iconos_pie fab fa-twitter"></i></a></li>
-            <li class="pie_li_red"><a href="https://www.facebook.com/mailen.monney" target="_blank"><i class="iconos_pie fab fa-facebook-f"></i></a></li>
-        </ul>
-        <a href="contacto.html" class="mail">maimonney30@gmail.com</a>
-    </footer>
-    <script src="js/index.js"></script>
+
+        <!-- Contenido -->
+        <div class="contenido_portfolio">  
+          <img src="imagen/trabajos_de_facultad/jujuy_marca.jpg" alt="diseño de marca" class="imagen_portfolio">  
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section class="seccion_contacto">
+
+    <!-- Texto decorativo de fondo -->
+    <div class="texto_fondo_contacto">
+      <h2>Contacto</h2>
+    </div>
+
+    <div class="contenedor_contacto">
+      <div class="contenido_contacto">
+
+        <h3 class="titulo_contacto">Contacto</h3>
+
+        <p class="descripcion_contacto">
+          Me interesa formar parte de proyectos digitales donde el diseño y la funcionalidad trabajen en conjunto.
+        </p>
+
+        <!-- Email -->
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=maimonneydg@gmail.com" target="_blank"
+          class="email_contacto">
+          <i class="fa-solid fa-envelope"></i> maimonneydg@gmail.com
+        </a>
+
+
+        <!-- Redes -->
+        <div class="redes_contacto">
+          <a href="https://instagram.com/maimonney" target="_blank"><i class="fab fa-instagram"></i></a>
+          <span>•</span>
+          <a href="https://behance.net/mailenmonney" target="_blank"><i class="fab fa-behance"></i></a>
+          <span>•</span>
+          <a href="https://linkedin.com/in/mailen-monney" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Estrellas decorativas -->
+    <div class="estrella estrella-contacto-1">✦</div>
+    <div class="estrella estrella-contacto-2">✦</div>
+    <div class="estrella estrella-contacto-3">✦</div>
+
+  </section>
+
+     <!-- Footer -->
+  <footer class="bg-[#7c6698] py-8 text-center text-white/60 text-sm">
+    <p>© 2026 Mailen Monney · Diseñadora gráfica & desarrolladora web</p>
+  </footer>
 </body>
 
 </html>
